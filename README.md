@@ -83,12 +83,9 @@ Example request:
 
 ```
 {
-  "orderId": "12345",
-  "customerName": "John Doe",
-  "items": [
-    {"productId": "abc", "quantity": 2},
-    {"productId": "xyz", "quantity": 1}
-  ]
+  "productId": "p1",
+  "quantity": 5,
+  "customerEmail": "customer@example.com"
 }
 ```
 
