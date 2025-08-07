@@ -1,6 +1,6 @@
 # Order Service
 
-The Order Service is a microservice designed to handle order processing in a message-driven architecture. It integrates with RabbitMQ to publish order message, facilitating communication with other services like Inventory, Payment, Email, and Shipping. For learning purpose, only inventory service is implemented (inventory-service-rabbitmq).
+The Order Service is a microservice designed to handle order processing in a message-driven architecture. It integrates with RabbitMQ to publish order message, facilitating communication with other services like Inventory, Payment, Email, and Shipping. For learning purpose, only inventory service is implemented (inventory-service-rabbitmq). Node v24.2.0 and RabbitMQ 4.x is used.
 
 Order validation is done through orderValidator.js. Error handling is implemented by using CustomerError class and middleware. Winston logger is used for logging in console and error.log file.
 
@@ -73,6 +73,23 @@ For production:
 
 ```
 npm start
+```
+
+2. **API Endpint:**
+
+POST /orders: Create a new order.
+
+Example request:
+
+```
+{
+  "orderId": "12345",
+  "customerName": "John Doe",
+  "items": [
+    {"productId": "abc", "quantity": 2},
+    {"productId": "xyz", "quantity": 1}
+  ]
+}
 ```
 
 ## Testing
