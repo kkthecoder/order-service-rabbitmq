@@ -31,7 +31,7 @@ The service uses a message-driven architecture with RabbitMQ as the message brok
 
 ```bash
 git clone https://github.com/kkthecoder/order-service-rabbitmq.git
-cd order-service
+cd order-service-rabbitmq
 ```
 
 2. **Install Dependencies:**
